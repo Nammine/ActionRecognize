@@ -1,0 +1,20 @@
+﻿<Properties StartupItem="Assembly-CSharp.csproj">
+  <MonoDevelop.Ide.Workspace />
+  <MonoDevelop.Ide.Workbench ActiveDocument="..\..\FriutNinja\FriutNinja\Assets\FruitNinja\Script\UseKinectManager.cs">
+    <Files>
+      <File FileName="..\..\FriutNinja\FriutNinja\Assets\FruitNinja\Script\Splash.cs" Line="13" Column="17" />
+      <File FileName="..\..\FriutNinja\FriutNinja\Assets\FruitNinja\Script\OverMusic.cs" Line="1" Column="1" />
+      <File FileName="..\..\FriutNinja\FriutNinja\Assets\FruitNinja\Script\ImageToUserMap.cs" Line="20" Column="65" />
+      <File FileName="..\..\FriutNinja\FriutNinja\Assets\KinectScripts\KinectManager.cs" Line="250" Column="22" />
+      <File FileName="..\..\FriutNinja\FriutNinja\Assets\FruitNinja\Script\AroundCollider.cs" Line="1" Column="1" />
+      <File FileName="..\..\FriutNinja\FriutNinja\Assets\FruitNinja\Script\Contant.cs" Line="1" Column="1" />
+      <File FileName="..\..\FriutNinja\FriutNinja\Assets\FruitNinja\Script\DetectFr.cs" Line="1" Column="1" />
+      <File FileName="..\..\FriutNinja\FriutNinja\Assets\FruitNinja\Script\UseKinectManager.cs" Line="1" Column="1" />
+      <File FileName="..\..\FriutNinja\FriutNinja\Assets\FruitNinja\Script\PanelCenter.cs" Line="1" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
