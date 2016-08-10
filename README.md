@@ -229,6 +229,16 @@ Solution: edit -> project setting -> player -> other settings -> api compatibili
 > So I decide to write my own API for it.
 
 > 游戏的可玩性和手感非常重要，做一款手感非常好的游戏真的蛮难的，加了一些特效和声音，比之前更有冲击感，不知道怎么更新啊，烦恼 
+
+> update complete !!!!! 
+  Problem: 在git add . 之后出现系统错误 warning: LF will be replaced by CRLF，查了一下原因是因为windows中的换行符为 CRLF， 而在linux下的换行符为LF。文件中的LF在执行add后出现提示。
+  Solution: 
+  <pre><code>
+  $ rm -rf .git
+  $ git config --gobal core.autocrlf false
+  $ git init
+  $ git add .
+  </code></pre>
    
 ## 结束语
 关于一些重要的基本的原理和知识都在这里啦，还有很多可以完善的地方，最近修改更新了一部分，新添加了体感控制的游戏开始界面，还没有更新，如果你想进一步开发，看完文档还不够，亲自去实践吧！
