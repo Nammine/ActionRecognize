@@ -220,9 +220,12 @@
    </code></pre>
    
 > bugs
-
+<code>
 Problem: error CS0234: The type or namespace name `Ports' does not exist in the namespace `System.IO'. Are you missing an assembly reference?
+</code>
+<code>
 Solution: edit -> project setting -> player -> other settings -> api compatibility level change .net 2.0 subset to .net 2.0
+</code>
 
 > I'm sorry to inform you that the kinect v2 with MS doesn't work in unity5.*.*, the exception is DllNotFoundException:KinectUnityAddin.I try everything I can do, it still can't work(sad face).
 
@@ -231,8 +234,8 @@ Solution: edit -> project setting -> player -> other settings -> api compatibili
 > 游戏的可玩性和手感非常重要，做一款手感非常好的游戏真的蛮难的，加了一些特效和声音，比之前更有冲击感，不知道怎么更新啊，烦恼 
 
 > update complete !!!!! 
-  Problem: 在git add . 之后出现系统错误 warning: LF will be replaced by CRLF，查了一下原因是因为windows中的换行符为 CRLF， 而在linux下的换行符为LF。文件中的LF在执行add后出现提示。
-  Solution: 
+  * Problem: 在git add . 之后出现系统错误 warning: LF will be replaced by CRLF，查了一下原因是因为windows中的换行符为 CRLF， 而在linux下的换行符为LF。文件中的LF在执行add后出现提示。
+  * Solution: 
   <pre><code>
   $ rm -rf .git
   $ git config --gobal core.autocrlf false
