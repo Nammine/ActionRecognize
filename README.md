@@ -220,12 +220,8 @@
    </code></pre>
    
 > bugs
-<code>
-Problem: error CS0234: The type or namespace name `Ports' does not exist in the namespace `System.IO'. Are you missing an assembly reference?
-</code>
-<code>
-Solution: edit -> project setting -> player -> other settings -> api compatibility level change .net 2.0 subset to .net 2.0
-</code>
+* Problem: error CS0234: The type or namespace name `Ports' does not exist in the namespace `System.IO'. Are you missing an assembly reference?
+* Solution: edit -> project setting -> player -> other settings -> api compatibility level change .net 2.0 subset to .net 2.0
 
 > I'm sorry to inform you that the kinect v2 with MS doesn't work in unity5.*.*, the exception is DllNotFoundException:KinectUnityAddin.I try everything I can do, it still can't work(sad face).
 
