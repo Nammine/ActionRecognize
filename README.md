@@ -240,7 +240,25 @@
   </code></pre>
   
   
-> 新增功能，300s后玩家还未完成指定的所有动作重启场景，要使用sceneManager，unity版本要更新。我使用了Application.LoadLevel("sceneName"),可以重新加载场景了，但是出现了bug：There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.   没错加载了多个main camera，我还没找到原因，为了解决这个bug，我新加了camera，把audio listener 挂在它上面，把camera组件设为inactive，bug修复，但是原始问题并没有解决，待我看完文档后再来写
+> 新增功能，300s后玩家还未完成指定的所有动作重启场景，要使用sceneManager，unity版本要更新。我使用了Application.LoadLevel("sceneName"),可以重新加载场景了，但是出现了bug：There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.   没错加载了多个main camera，我还没找到原因，为了解决这个bug，我新加了camera，把audio listener 挂在它上面，把camera组件设为inactive。另外在Application.LoadLevel("sceneName")之前先手动Destroy(MainCamera)。代码如下：
+<pre><code>
+using UnityEngine;
+using System.Collections;
+public class TimeControl : MonoBehaviour {
+	private GameObject uCharacter;
+	// Use this for initialization
+	void Start () {
+		uCharacter = GameObject.FindWithTag("Person");
+		Invoke("RestartGame",10f);
+	}
+	// Update is called once per frame
+	void RestartGame() {
+		Destroy(GameObject.FindWithTag("MainCamera"));
+		Destroy (uCharacter.GetComponent("AvatarController"));
+		Application.LoadLevel("second");
+	}
+}
+</code></pre>
    
 ## 结束语
 关于一些重要的基本的原理和知识都在这里啦，还有很多可以完善的地方，最近修改更新了一部分，新添加了体感控制的游戏开始界面，还没有更新，如果你想进一步开发，看完文档还不够，亲自去实践吧！
